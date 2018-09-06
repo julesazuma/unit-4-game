@@ -39,8 +39,37 @@ function gamePlay(){
 		crystalValue();
 	}
 }
+
+
+
+$('#randomNumber').text(computerChoice);
+
+
+
+$('#diamond').on('click', function(){
+	userTotalScore += diamondChoice;
+	$('#currentScoreCounter').text(userTotalScore);
+	gamePlay();
 });
 
 
+$('#ruby').on('click', function(){
+	userTotalScore += rubyChoice;
+	$('#currentScoreCounter').text(userTotalScore);
+	gamePlay();
+});
 
 
+$('#emerald').on('click', function(){
+	userTotalScore += emeraldChoice;
+	$('#currentScoreCounter').text(userTotalScore);
+	gamePlay();
+});
+
+
+$('#citrine').on('click', function(){
+	userTotalScore += citrineChoice;
+	$('#currentScoreCounter').text(userTotalScore);
+	gamePlay();
+});
+});
