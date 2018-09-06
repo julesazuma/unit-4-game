@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crystals Collector Game</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div id="container">
+        <!-- Game title -->
+		<header>
+			<h1>Crystals Collector!</h1>
+		</header>
+
+		<section>
+            <!-- Rules -->
+			<p>You will be given a random number at the start of the game.</p>
+			<br/>
+			<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+			<br/>
+			<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+			<br/>
+			<p>The value of each crystal is hidden from you until you click on it.</p>
+			<br/>
+			<p>Each time when the game starts, the game will change the values of each crystal.</p>
+		</section>
+
+		<div id="numberScore">
+			<div id="numberGenerator">
+				<span id="randomNumber"></span>
+			</div>
+
+			<div id="scoreBoard">
+				<span id="winLose"></span>
+				<p>Wins: <span id="winCounter">0</span></p>
+				<p>Losses: <span id="lossCounter">0</span></p>
+			</div>
+		</div>
+
+		<div id="crystals">
+			<img id="diamond" src="assets/images/diamond.png" alt="diamond pic">
+			<img id="ruby" src="assets/images/ruby.png" alt="ruby pic">
+            <img id="emerald"
+            src="assets/images/emerald.png" alt="emerald pic">
+            <img id="citrine"
+            src="assets/images/citrine.png" alt="citrine pic">
+		</div>
+
+		<div id="currentScore">
+			<h1>Your total score is:</h1>
+			<span id="currentScoreCounter"></span>
+		</div>
+	</div>
+
+<script
+src="https://code.jquery.com/jquery-3.3.1.js"
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
